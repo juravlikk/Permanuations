@@ -30,13 +30,7 @@ public class Permanuation {
    		a = new String[N];
    		for (int i = 0; i < N; i++) {
    			a[i] = Integer.toString(N - i);
-   			fw.write(Integer.toString(i + 1));
-   			if (i < N - 1) {
-   				fw.write(" ");
-   			}
    		}
-		fw.write("\n");
-		count++;
 
 		getPermanuations(N, N - 1, N, "");
 		
